@@ -1,8 +1,8 @@
 /* ziye 
-github地址 https://github.com/*ziye12
+github地址 https://github.com/*ziye66666
 TG频道地址  https://t.me/ziyescript
 TG交流群   https://t.me/joinchat/AAAAAE7XHm-q1-7Np-tF3g
-boxjs链接  https://raw.githubusercontent.com/ziye12/JavaScript/main/Task/ziye.boxjs.json
+boxjs链接  https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/ziye.boxjs.json
 转载请备注个名字，谢谢
 
 ⚠️芝嫲视频
@@ -10,6 +10,7 @@ boxjs链接  https://raw.githubusercontent.com/ziye12/JavaScript/main/Task/ziye.
 
 2.13 制作
 2.15 修复刷新问题,修复部分问题,点夺宝获取ck
+2.18 修复云函数报错
 
 ⚠️一共1个位置 1个ck  👉 1条 Secrets
 多账号换行
@@ -43,16 +44,16 @@ hostname=api.sxsjyzm.com,
 ############## 圈x
 
 #芝嫲视频获取body
-https:\/\/api\.sxsjyzm\.com\/* url script-request-body https://raw.githubusercontent.com/ziye12/JavaScript/main/Task/zhima.js   
+https:\/\/api\.sxsjyzm\.com\/* url script-request-body https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/zhima.js   
 
 ############## loon
 #芝嫲视频获取body
-http-request https:\/\/api\.sxsjyzm\.com\/* script-path=https://raw.githubusercontent.com/ziye12/JavaScript/main/Task/zhima.js,requires-body=true, tag=芝嫲视频获取body
+http-request https:\/\/api\.sxsjyzm\.com\/* script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/zhima.js,requires-body=true, tag=芝嫲视频获取body
 
 ############## surge
 
 #芝嫲视频获取body
-芝嫲视频获取body = type=http-request,pattern=https:\/\/api\.sxsjyzm\.com\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ziye12/JavaScript/main/Task/zhima.js 
+芝嫲视频获取body = type=http-request,pattern=https:\/\/api\.sxsjyzm\.com\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/zhima.js 
 
 
 
@@ -95,16 +96,16 @@ if ($.isNode() && process.env.ZM_zhimabody) {
     }
     
 }
-if (COOKIE.zhimabodyArr) {
+if (COOKIE.zhimabodyVal) {
     ZM_COOKIES = {
         "zhimabodyVal": COOKIE.zhimabodyVal.split('\n'),
     
 
 
     }
-    Length = ZM_COOKIES.zhimabodyArr.length;
+    Length = ZM_COOKIES.zhimabodyVal.length;
 }
-if (!COOKIE.zhimabodyArr) {
+if (!COOKIE.zhimabodyVal) {
     if ($.isNode()) {
         Object.keys(middlezhimabody).forEach((item) => {
             if (middlezhimabody[item]) {
