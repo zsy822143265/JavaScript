@@ -81,8 +81,6 @@ const zhimatxbodyArr = [];
 let zhimatxbodyVal = ``;
 let middlezhimatxbody = [];
 
-middlezhimatxbody = process.env.ZM_zhimatxbody.split();
-
 if ($.isNode()) {
     // 没有设置 ZM_CASH 则默认为 0 不提现
     CASH = process.env.ZM_CASH || 0;
